@@ -4,6 +4,7 @@ module Georgia
 
       include Elasticsearch::Model
       include Elasticsearch::Model::Callbacks
+      index_name "georgai-blog-posts-#{Rails.env}"
 
       has_one :post_data, foreign_key: :post_id
       accepts_nested_attributes_for :post_data
