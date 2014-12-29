@@ -2,10 +2,8 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'rails', '> 4.1'
-  gem 'pry'
-  gem 'pry-rails'
-  gem 'pry-debugger'
+  gem 'rails'
+  gem 'pry-byebug'
   gem 'georgia', path: '~/workspace/georgia'
 end
 
